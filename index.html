@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
 
+<body>
+    <div class="weather-container">
+        <form id="input-search-form">
+            <input type="text" class="input-search-text" placeholder="Search for a cities..." required>
+            <input type="submit" class="input-search-submit" placeholder="Search">
+        </form>
+        <div class="current-city-weather">
+            <div class="current-city-name-time">
+                <h1 class="city-name" id="city-name">
+                    America
+                </h1>
+                <h3 class="current-city-time" id="current-city-time">
+                    Wednesday, 23 October
+                </h3>
+                <div class="current-city-weather-details">
+                    <div class="current-city-temperature">
+                        <h1 class="current-city-temperature">
+                            <span class="">+17</span><span class="temperature-degree">º</span><span
+                                class="temperature-unit">C</span>
+                        </h1>
+                    </div>
+                    <div class="current-city-temperature-feels-like">
+                        <h2>Partly Cloudy</h2>
+                        <h3>Feels like <span class="temperature-feels-like">+15</span class="temperature-degree">º</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="current-city-weather-icon">
+                <p>☀️</p>
+            </div>
+        </div>
+        <div class="weather-conditions">
+            <div class="min-temperature">
+                <p>Min-Temperature:
+                    <br><span>16.65</span>ºC
+                </p>
+            </div>
+            <div class="max-temperature">
+                <p>Max-Temperature:
+                    <br> <span>21.08</span>ºC
+                </p>
+            </div>
+            <div class="wind-speed">
+                <p>Wind Speed:
+                    <br><span>6.27</span>km/h
+                </p>
+            </div>
+            <div class="humidity">
+                <p>Humidity: <br><span>58</span>%</p>
+            </div>
+        </div>
+        <footer class="site-information">
+            This site was coded by
+            <a href="https://github.com/jasleen-kaur-2649">Jasleen Kaur</a> and is on
+            <a href="https://github.com/jasleen-kaur-2649/weather-website-from-scratch">Github</a> and hosted on
+            <a href="#">Netlify</a>.
+        </footer>
+    </div>
     <script src="scripts.js"></script>
 </body>
+
 </html>
