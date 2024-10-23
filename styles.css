@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto", serif;
+  color: aliceblue;
+}
+.weather-container {
+  max-width: 600px;
+  background-color: rgb(11 19 30);
+  border: 1px none rgb(11 19 30);
+  padding: 20px 30px;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+
+.input-search-text {
+  background-color: rgb(32 44 60);
+  /* color: rgb(32 44 60, 0.2); */
+  border: 1px none rgb(32 44 60);
+  border-radius: 5px;
+  max-width: 120%;
+  padding: 15px 15px;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.input-search-submit {
+  background-color: #840ec9;
+  border: 1px none #840ec9;
+  border-radius: 5px;
+  width: 20%;
+  color: aliceblue;
+  padding: 15px 20px;
+  line-height: 18px;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.current-city-weather {
+  display: flex;
+}
