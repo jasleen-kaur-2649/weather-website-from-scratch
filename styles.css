@@ -6,9 +6,13 @@ body {
   max-width: 600px;
   background-color: rgb(11 19 30);
   border: 1px none rgb(11 19 30);
-  padding: 20px 30px;
+  padding: 20px 40px;
   margin: 60px auto;
   border-radius: 10px;
+}
+
+#input-search-form {
+  padding: 20px 0px;
 }
 
 .input-search-text {
@@ -16,7 +20,7 @@ body {
   /* color: rgb(32 44 60, 0.2); */
   border: 1px none rgb(32 44 60);
   border-radius: 5px;
-  max-width: 120%;
+  width: 70%;
   padding: 15px 15px;
   line-height: 18px;
   font-size: 18px;
@@ -26,7 +30,7 @@ body {
   background-color: #840ec9;
   border: 1px none #840ec9;
   border-radius: 5px;
-  width: 20%;
+  width: 23.5%;
   color: aliceblue;
   padding: 15px 20px;
   line-height: 18px;
@@ -36,4 +40,121 @@ body {
 
 .current-city-weather {
   display: flex;
+  justify-content: space-between;
+  max-height: 210px;
+  margin: 10px 0px;
+  /* margin-top: 20px; */
+}
+.current-city-weather-icon {
+  font-size: 80px;
+}
+
+.current-city-weather-details {
+  display: flex;
+  /* column-gap: 50px; */
+}
+#city-name {
+  font-size: 40px;
+  margin-bottom: 3px;
+}
+
+.current-city-time {
+  margin: -5px 0px;
+  opacity: 30%;
+  font-weight: 300;
+}
+.temperature-value {
+  font-size: 80px;
+  font-weight: 400;
+  /* color: aqua; */
+}
+#temperature-degree {
+  font-size: 40px;
+  position: relative;
+  top: -28px;
+  font-weight: 300;
+}
+/* #temperature-unit{
+  
+} */
+#horizontal-line {
+  position: relative;
+  margin: 40px;
+  opacity: 30%;
+}
+/* .current-city-temperature-feels-like {
+  margin-left: 10px;
+  padding-left: 5px; 
+ } */
+
+.current-city-temperature-feels-like h2 {
+  margin-bottom: 0px;
+  position: relative;
+  top: 25px;
+  font-weight: 500;
+}
+.current-city-temperature-feels-like h3 {
+  /* margin-top: 5px; */
+  position: relative;
+  top: 10px;
+  font-weight: 300;
+}
+
+.current-city-weather-icon p {
+  position: relative;
+  bottom: 80px;
+  font-size: 100px;
+}
+
+.weather-conditions {
+  display: flex;
+  column-gap: 20px;
+  padding: 0px 0px;
+  justify-content: space-between;
+  /* padding-right: 20px; */
+  /* grid-template: 2; */
+  /* place-items: 2; */
+}
+.flex1 {
+  /* padding-left: 20px; */
+  padding-right: 20px;
+}
+.flex2 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.cards {
+  padding: 3px 15px;
+  margin: 30px 0px;
+  /* max-width: 130px;
+  max-height: 120px; */
+  scale: 1.2;
+
+  /* border: 2px solid #840ec9; */
+}
+.weather-conditions-container {
+  padding: 10px;
+  padding-bottom: 5px;
+  background-color: #202c3c3d;
+  border: 2px solid #202c3c3d;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.weather-conditions-container p {
+  opacity: 30%;
+  font-size: 18px;
+  padding: 0px;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin: 0px;
+
+  /* background-color: #202c3c3d; */
+}
+.condition {
+  color: aliceblue;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
 }

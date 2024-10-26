@@ -15,7 +15,7 @@
 
 <body>
     <div class="weather-container">
-        <form id="input-search-form">
+        <form class="input-search-form" id="input-search-form">
             <input type="text" class="input-search-text" placeholder="Search for cities..." required>
             <input type="submit" class="input-search-submit" value="Search">
         </form>
@@ -30,10 +30,11 @@
                 <div class="current-city-weather-details">
                     <div class="current-city-temperature">
                         <h1 class="current-city-temperature">
-                            <span class="">+17</span><span class="temperature-degree">º</span><span
-                                class="temperature-unit">C</span>
+                            <span class="temperature-value">+17</span><span id="temperature-degree">º<span
+                                    id="temperature-unit">C</span></span>
                         </h1>
                     </div>
+                    <hr id="horizontal-line">
                     <div class="current-city-temperature-feels-like">
                         <h2>Partly Cloudy</h2>
                         <h3>Feels like <span class="temperature-feels-like">+15</span><span
@@ -45,24 +46,32 @@
                 <p>☀️</p>
             </div>
         </div>
-        <div class="weather-conditions">
-            <div class="min-temperature">
-                <p>Min-Temperature:
-                    <br><span>16.65</span>ºC
-                </p>
-            </div>
-            <div class="max-temperature">
-                <p>Max-Temperature:
-                    <br> <span>21.08</span>ºC
-                </p>
-            </div>
-            <div class="wind-speed">
-                <p>Wind Speed:
-                    <br><span>6.27</span>km/h
-                </p>
-            </div>
-            <div class="humidity">
-                <p>Humidity: <br><span>58</span>%</p>
+        <div class="weather-conditions-container">
+            <p>AIR CONDITIONS</p>
+            <div class="weather-conditions">
+
+                <div class="flex1">
+                    <div class="cards min-temperature">
+                        <p class="condition">Min-Temperature:
+                            <br><span class="values">16.65</span>ºC
+                        </p>
+                    </div>
+                    <div class="cards max-temperature">
+                        <p class="condition">Max-Temperature:
+                            <br> <span class="values">21.08</span>ºC
+                        </p>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="cards wind-speed">
+                        <p class="condition">Wind Speed:
+                            <br><span class="values">6.27</span>km/h
+                        </p>
+                    </div>
+                    <div class="cards humidity">
+                        <p class="condition">Humidity: <br><span class="values">58</span>%</p>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="site-information">
