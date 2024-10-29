@@ -4,9 +4,10 @@ body {
 }
 .weather-container {
   max-width: 600px;
+  height: 530px;
   background-color: rgb(11 19 30);
-  border: 1px none rgb(11 19 30);
-  padding: 20px 40px;
+  border: 1px none rgb(11, 19, 30);
+  padding: 20px 40px 0px;
   margin: 60px auto;
   border-radius: 10px;
 }
@@ -43,6 +44,7 @@ body {
   justify-content: space-between;
   max-height: 210px;
   margin: 10px 0px;
+  margin-top: 0px;
   /* margin-top: 20px; */
 }
 .current-city-weather-icon {
@@ -74,18 +76,12 @@ body {
   top: -28px;
   font-weight: 300;
 }
-/* #temperature-unit{
-  
-} */
+
 #horizontal-line {
   position: relative;
   margin: 40px;
   opacity: 30%;
 }
-/* .current-city-temperature-feels-like {
-  margin-left: 10px;
-  padding-left: 5px; 
- } */
 
 .current-city-temperature-feels-like h2 {
   margin-bottom: 0px;
@@ -108,35 +104,34 @@ body {
 
 .weather-conditions {
   display: flex;
-  column-gap: 20px;
-  padding: 0px 0px;
   justify-content: space-between;
-  /* padding-right: 20px; */
-  /* grid-template: 2; */
-  /* place-items: 2; */
+  height: 110px;
 }
-/* .flex1 {
-  padding-left: 20px;
-  /* padding-right: 20px; } */
+
 .flex2 {
   padding-right: 20px;
-  /* padding-left: 20px; */
 }
 .cards {
-  /* padding: 3px 15px; */
-  margin: 30px 0px;
+  margin: 10px 0px;
+}
+.cards .values {
+  color: yellow;
+  font-weight: 400;
+  font-size: 17px;
+  /* stroke-opacity: 30%; */
 }
 .weather-conditions-container {
   padding: 10px;
-  padding-bottom: 5px;
   background-color: #202c3c3d;
   border: 2px solid #202c3c3d;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 .weather-conditions-container p {
-  opacity: 30%;
-  font-size: 18px;
+  opacity: 40%;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
   padding: 0px;
   padding-top: 5px;
   padding-left: 5px;
@@ -144,11 +139,31 @@ body {
 
   /* background-color: #202c3c3d; */
 }
+.weather-conditions-container .air-conditions {
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 20%;
+}
+
 .condition {
   color: aliceblue;
 }
 
 footer {
+  opacity: 60%;
+  font-size: 16px;
+  font-weight: 400;
   padding: 10px;
   text-align: center;
+  line-height: 15px;
+}
+
+footer a {
+  color: yellow;
+
+  opacity: 70%;
+  transition: all 150ms ease-in-out;
+}
+footer a:hover {
+  opacity: 100%;
 }
