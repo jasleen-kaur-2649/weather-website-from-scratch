@@ -73,7 +73,8 @@ function searchCity(response) {
     let weather_description = document.querySelector(".description");
     weather_description.innerHTML = `${city.data.condition.description}`;
     let weather_icon = document.querySelector(".current-city-weather-icon");
-    weather_icon.innerHTML=`${}`
+    weather_icon.innerHTML = `<img src="${city.data.condition.icon_url}"
+                        alt="few-clouds-day">`;
   }
   response.preventDefault();
   let apiKey = "2d8o4b96bdta6ee065c85fc43853285d";
