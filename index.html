@@ -7,10 +7,15 @@
     <title>Weather Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <!-- Replace all individual icon links with one common link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300&display=swap" />
+
+
+
 </head>
 
 <body>
@@ -53,26 +58,62 @@
             <div class="weather-conditions">
 
                 <div class="flex1">
-                    <div class="cards min-temperature">
-                        <p class="condition">Min-Temperature:
-                            <br><span class="values">16.65ºC</span>
-                        </p>
+                    <div class="temp-flex">
+                        <div class="icon">
+
+                            <span class="material-symbols-outlined">
+                                thermometer_loss
+                            </span>
+
+                        </div>
+                        <div class="cards min-temperature">
+                            <p class="condition">Min-Temperature:
+                                <br><span class="values">16.65ºC</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="cards max-temperature">
-                        <p class="condition">Max-Temperature:
-                            <br> <span class="values">21.08ºC</span>
-                        </p>
+                    <!-- 
+                    
+                    <div class="icons"></div> -->
+                    <div class="temp-flex">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                                thermometer_gain
+                            </span>
+                        </div>
+                        <div class="cards max-temperature">
+                            <p class="condition">Max-Temperature:
+                                <br> <span class="values">21.08ºC</span>
+                            </p>
+                        </div>
                     </div>
+
                 </div>
                 <div class="flex2">
-                    <div class="cards wind-speed">
-                        <p class="condition">Wind Speed:
-                            <br><span class="values">6.27km/h</span>
-                        </p>
+                    <div class="temp-flex">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                                air
+                            </span>
+
+                        </div>
+                        <div class="cards wind-speed">
+                            <p class="condition">Wind Speed:
+                                <br><span class="values">6.27km/h</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="cards humidity">
-                        <p class="condition">Humidity: <br><span class="values">58%</span></p>
+                    <div class="temp-flex">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                                humidity_low
+                            </span>
+                        </div>
+                        <div class="cards humidity">
+                            <p class="condition">Humidity: <br><span class="values">58%</span></p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -82,6 +123,7 @@
             <a href="https://github.com/jasleen-kaur-2649/weather-website-from-scratch">Github</a> and hosted on
             <a href="#">Netlify</a>.
         </footer>
+
     </div>
     <script src="scripts.js"></script>
 </body>
