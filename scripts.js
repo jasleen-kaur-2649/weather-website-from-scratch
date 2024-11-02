@@ -1,5 +1,7 @@
 // alert("Hello");
 
+const { img } = require("framer-motion/client");
+
 function formatDate() {
   let cityTime = document.querySelector("#current-city-time");
   let today = new Date();
@@ -67,6 +69,11 @@ function searchCity(response) {
 
     let humidity = document.querySelector(".humidity .condition .values");
     humidity.innerHTML = `${city.data.temperature.humidity}%`;
+
+    let weather_description = document.querySelector(".description");
+    weather_description.innerHTML = `${city.data.condition.description}`;
+    let weather_icon = document.querySelector(".current-city-weather-icon");
+    weather_icon.innerHTML=`${}`
   }
   response.preventDefault();
   let apiKey = "2d8o4b96bdta6ee065c85fc43853285d";

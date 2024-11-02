@@ -52,8 +52,11 @@ body {
   margin-top: 0px;
   /* margin-top: 20px; */
 }
-.current-city-weather-icon {
-  font-size: 80px;
+.current-city-weather-icon img {
+  /* font-size: 80px; */
+  position: relative;
+  top: 25px;
+  transform: scale(1.8);
 }
 
 .current-city-weather-details {
