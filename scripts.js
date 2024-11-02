@@ -54,7 +54,7 @@ function searchCity(response) {
         city.data.temperature.feels_like
       )}`;
     }
-    
+
     // not working yet
     //let minTemperature = document.querySelector(
     //   ".min-temperature .condition .values"
