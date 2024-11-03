@@ -38,15 +38,10 @@ function updateWeather(city) {
 
   let feelsLikeTemperature = document.querySelector(".temperature-feels-like");
   // console.log(city.data.temperature.feels_like);
-  if (city.data.temperature.feels_like < 10)
-    feelsLikeTemperature.innerHTML = `0${Math.round(
-      city.data.temperature.feels_like
-    )}`;
-  else {
-    feelsLikeTemperature.innerHTML = `${Math.round(
-      city.data.temperature.feels_like
-    )}`;
-  }
+  feelsLikeTemperature.innerHTML = `${Math.round(
+    city.data.temperature.feels_like
+  )}`;
+
   let windSpeed = document.querySelector(".wind-speed .condition .values");
   windSpeed.innerHTML = `${city.data.wind.speed}km/h`;
 
@@ -94,8 +89,12 @@ function convertAllTemperatures() {
 
   temp_unit.forEach((unit) => {
     isCelsius ? (unit.innerHTML = "ºF") : (unit.innerHTML = "ºC");
-    
   });
 }
 
-
+let defaultCity = "Paris";
+let apiKey = "2d8o4b96bdta6ee065c85fc43853285d";
+let cityName = document.querySelector("#city-name");
+cityName.innerHTML = defaultCity;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${defaultCity}&key=${apiKey}`;
+axios.get(apiUrl).then(updateWeather);
