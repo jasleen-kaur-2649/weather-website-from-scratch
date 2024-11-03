@@ -43,6 +43,9 @@ body {
   font-size: 18px;
   margin-left: 5px;
 }
+.temp-update:hover {
+  cursor: pointer;
+}
 
 .current-city-weather {
   display: flex;
@@ -83,6 +86,11 @@ body {
   position: relative;
   top: -28px;
   font-weight: 300;
+}
+
+.unit {
+  position: relative;
+  bottom: 34px;
 }
 .values {
   color: aliceblue;
