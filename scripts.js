@@ -92,7 +92,7 @@ function convertAllTemperatures() {
   });
 }
 
-let defaultCity = "Paris";
+let defaultCity = "India";
 let apiKey = "2d8o4b96bdta6ee065c85fc43853285d";
 let cityName = document.querySelector("#city-name");
 cityName.innerHTML = defaultCity;
