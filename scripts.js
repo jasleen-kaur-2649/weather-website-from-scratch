@@ -57,6 +57,19 @@ function updateWeather(city) {
   formatDate();
 }
 
+function update_min_max_temp(city) {
+  let minimum_temp = document.querySelector(
+    ".min-temperature .condition .values"
+  );
+  let maximum_temp = document.querySelector(
+    ".max-temperature .condition .values"
+  );
+  // console.log(minimum_temp);
+  // console.log(maximum_temp);
+  minimum_temp.innerHTML = `${city.data.daily.temperature.minimum}`;
+  maximum_temp.innerHTML = `${city.data.daily.temperature.maximum}`;
+}
+
 function searchCity(response) {
   response.preventDefault();
   let apiKey = "2d8o4b96bdta6ee065c85fc43853285d";
@@ -65,7 +78,9 @@ function searchCity(response) {
   let cityName = document.querySelector("#city-name");
   cityName.innerHTML = cityElement;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityElement}&key=${apiKey}`;
+  let foreCastApiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${cityElement}&key=${apiKey}`;
   axios.get(apiUrl).then(updateWeather);
+  axios.get(foreCastApiUrl).then(update_min_max_temp);
 }
 
 let searchButton = document.querySelector(".input-search-submit");
