@@ -64,10 +64,11 @@ function update_min_max_temp(city) {
   let maximum_temp = document.querySelector(
     ".max-temperature .condition .values"
   );
+
   // console.log(minimum_temp);
   // console.log(maximum_temp);
-  minimum_temp.innerHTML = `${city.data.daily.temperature.minimum}`;
-  maximum_temp.innerHTML = `${city.data.daily.temperature.maximum}`;
+  // minimum_temp.innerHTML = `${city.data.daily.temperature.minimum}`;
+  // maximum_temp.innerHTML = `${city.data.daily.temperature.maximum}`;
 }
 
 function searchCity(response) {
@@ -79,6 +80,7 @@ function searchCity(response) {
   cityName.innerHTML = cityElement;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityElement}&key=${apiKey}`;
   let foreCastApiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${cityElement}&key=${apiKey}`;
+  console.log(foreCastApiUrl);
   axios.get(apiUrl).then(updateWeather);
   axios.get(foreCastApiUrl).then(update_min_max_temp);
 }
